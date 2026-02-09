@@ -45,3 +45,7 @@ console.group();
 console.log("group1")
 console.log("group2")
 console.groupEnd()
+
+//table
+let students={name: "Ananya", age:"20", course:"CSE"};
+console.table(students);
