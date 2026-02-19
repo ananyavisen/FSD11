@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo.com</title>
+</head>
+<body>
+    <input id="task">
+    <button onclick="add()">Add</button>
+    <ul id="list"></ul>
+
+    <script>
+        let task1=[];
+
+        function add(){
+            task1.push(task.value);
+            task.value="";
+            show();
+        }
+
+        function show(){
+
+            list.innerHTML="";
+            for(let i=0; i<task1.length; i++){
+                list.innerHTML+= "<li>" + task1[i] + "</li>";
+            }
+        }
+    </script>
+</body>
+</html>
