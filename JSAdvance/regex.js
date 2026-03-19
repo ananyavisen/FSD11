@@ -33,3 +33,20 @@ console.log(c.test("12345"));
 
 let reges = /\d{3}/;
 console.log("12345".match(reges));
+
+let newReg= /(cat | dog)/;
+console.log(newReg.test("I have a dog"));
+
+let a = "hello world";
+//let result = a.replace(/world/, "javascript");
+let result = a.search(/world/);
+console.log(result);
+
+let b = "a,b,c";
+console.log(b.split(/,/));
+
+// E-mail Validation
+let emailPattern= /^[a-zA-Z0-9._]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+
+//Password Validation
+let Password= /^[a-z]+[A-Z]+/d{8}$/;
