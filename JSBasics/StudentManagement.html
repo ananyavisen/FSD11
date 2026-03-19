@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h2> <center>Smart Students Management</center></h2>
+    <div class="input-section">
+    <form>
+    <p>Enter Name: </p>
+    <input type="text" id="name" placeholder="Enter Name">
+    <p>Enter E-mail ID: </p>
+    <input type="text" id="email" placeholder="Enter E-mail">
+    <p>Enter Marks: </p>
+    <input type="number" id="marks" placeholder="Enter Marks"><br><br>
+    <button onclick="addStudent()">Add Student</button>
+    </form></div>
+    <h2>  Student List </h2>
+    <ul id="StudentList"></ul>
+
+    <script>
+        //global scope
+        //array
+        let Students=[];
+        //set
+        let emailset=new Set();
+        //map
+        let gradeMap=new Map();
+
+        function addStudent(){
+            try{
+                //debugging
+                debugger;
+
+                //local scope
+
+                const name=document.getElementById("name").value;
+                const email=document.getElementById("email").value;
+                const marks=Number(document.getElementById("email").value);
+
+                //regex validation
+
+                const emailPattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if(!emailPattern.test(email)){
+                    throw new error("invalid email format");
+                }
+
+            }
+            catch{}
+        };
+        Students.push()
+
+    </script>
+</body>
+</html>
